@@ -36,4 +36,19 @@ public class ProductRepositoryTest {
 
         assertEquals(result, product);
     }
+
+    @Test
+    public void testSaveAndGetProduct() throws Exception {
+        Product product = Product.builder()
+                .id("id")
+                .name("name")
+                .price(1000L)
+                .stock(1000)
+                .build();
+
+        productRepository.save(product).block();
+        Product result = productRepository.findById("id").block();
+
+        assertEquals(result, product);
+    }
 }
