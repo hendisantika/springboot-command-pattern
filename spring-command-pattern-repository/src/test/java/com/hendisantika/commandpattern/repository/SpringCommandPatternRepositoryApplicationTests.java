@@ -1,4 +1,4 @@
-package com.hendisantika.springcommandpattern.springcommandpatternrepository;
+package com.hendisantika.commandpattern.repository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
