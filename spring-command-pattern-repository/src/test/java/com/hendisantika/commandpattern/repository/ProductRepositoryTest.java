@@ -1,8 +1,12 @@
 package com.hendisantika.commandpattern.repository;
 
+import com.hendisantika.commandpattern.entity.Product;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by IntelliJ IDEA.
@@ -18,4 +22,18 @@ import org.springframework.test.annotation.DirtiesContext;
 public class ProductRepositoryTest {
     @Autowired
     private ProductRepository productRepository;
+
+    @Test
+    public void testSaveProduct() throws Exception {
+        Product product = Product.builder()
+                .id("id")
+                .name("name")
+                .price(1000L)
+                .stock(1000)
+                .build();
+
+        Product result = productRepository.save(product).block();
+
+        assertEquals(result, product);
+    }
 }
