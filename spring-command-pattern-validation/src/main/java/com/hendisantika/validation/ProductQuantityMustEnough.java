@@ -1,6 +1,7 @@
 package com.hendisantika.validation;
 
 import com.hendisantika.validation.validator.ProductQuantityMustEnoughValidator;
+import com.hendisantika.validation.validator.ProductQuantityUpdateMustEnoughValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
