@@ -29,6 +29,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <jaxb.api.version>2.3.0</jaxb.api.version>
     </properties>
 
     <dependencies>
@@ -74,9 +75,21 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>3.0.3</version>
+            <version>4.3.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>${jaxb.api.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-osgi -->
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-osgi</artifactId>
+            <version>3.0.0-M4</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
