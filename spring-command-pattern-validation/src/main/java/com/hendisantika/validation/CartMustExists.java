@@ -1,4 +1,6 @@
-package com.hendisantika.springcommandpatternvalidation;
+package com.hendisantika.validation;
+
+import com.hendisantika.validation.validator.CartMustExistsValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
