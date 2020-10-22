@@ -1,5 +1,7 @@
 package com.hendisantika.validation;
 
+import com.hendisantika.validation.validator.CartMustNotExistsValidator;
+
 import javax.validation.Constraint;
 import javax.validation.Payload;
 import java.lang.annotation.Documented;
