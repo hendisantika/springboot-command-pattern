@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.10</version>
+        <version>3.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -28,7 +28,7 @@
 
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
         <jaxb.api.version>2.3.0</jaxb.api.version>
     </properties>
 
